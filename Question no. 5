@@ -16,7 +16,7 @@ void main()
 	{
 		printf("\n\nEnter process ID: %d",i);
 		scanf("%d",&p_id[i]);
-		printf("\n Enter the Burst Time for the process");
+		printf("\n Enter the Burst Time for the process: ");
 		scanf("%d",&bt[i]);
 		need[i]=bt[i];
 	}
