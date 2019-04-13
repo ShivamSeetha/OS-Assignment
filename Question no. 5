@@ -6,15 +6,15 @@ void main()
 	int tsl,p_id[10],need[10],wt[10],tat[10],i,j,n,n1;
 	int bt[10],flag[10],ttat=0,twt=0;
 	float awt,atat;
-	printf("\t\t***************ROUND ROBIN SCHEDULING***************");
-	printf("\n\n\nEnter the no. of processes: ");
+	printf("\n\t\t\t\t*****ROUND ROBIN SCHEDULING*********");
+	printf("\n\n\n Enter the no. of processes: ");
 	scanf("%d",&n);
 	n1=n;
 	printf("\n Enter the time slice: ");
 	scanf("%d",&tsl);
 	for(i=1;i<=n;i++)
 	{
-		printf("\n\nEnter process ID: %d",i);
+		printf("\n\n Enter process ID for %d: ",i);
 		scanf("%d",&p_id[i]);
 		printf("\n Enter the Burst Time for the process: ");
 		scanf("%d",&bt[i]);
@@ -64,13 +64,13 @@ for(i=1;i<=n1;i++)
 }
 	awt=(float)twt/n1;
 	atat=(float)ttat/n1;
-printf("\n\n Process Chart");
+printf("\n\n \t\tProcess Chart");
 printf("\n\n Process \t Process ID  \t BurstTime \t Waiting Time \t TurnaroundTime \n ");
 for(i=1;i<=n1;i++)
 {
-	printf("\n %5d \t\t %5d \t\t %5d \t\t %5d \t\t %5d \n", i,p_id[i],bt[i],wt[i],tat[i]);
+	printf("\n %3d \t\t %3d \t\t %3d \t\t %3d \t\t %3d \n", i,p_id[i],bt[i],wt[i],tat[i]);
 }
-printf("\n The average Waiting Time=%4.2f",awt);
-printf("\n The average Turn around Time=%4.2f",atat);
+printf("\n The average Waiting Time=%1.2f",awt);
+printf("\n The average Turn around Time=%1.2f",atat);
 getch();
 }
